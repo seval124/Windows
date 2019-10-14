@@ -254,12 +254,12 @@ Once your job is successful, navigate again to your websites to verify they are 
 
 [source,bash]
 ----
-http://s#-win1.ansibleworkshop.com:8080
+http://s#-win1.snx.local:8080
 ----
 and
 [source,bash]
 ----
-http://s#-win1.ansibleworkshop.com:8081
+http://s#-win1.snx.local:8081
 ----
 
 

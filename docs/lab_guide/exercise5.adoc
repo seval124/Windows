@@ -411,10 +411,10 @@ Once your job is successful, navigate to your new websites (replace # with your 
 
 [source,bash]
 ----
-http://s#-win1.ansibleworkshop.com:8080
+http://s#-win1.snx.local:8080
 ----
 and
 [source,bash]
 ----
-http://s#-win1.ansibleworkshop.com:8081
+http://s#-win1.snx.local:8081
 ----

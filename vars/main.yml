@@ -4,17 +4,17 @@
 ##########################################################
 
 # Where to provision instances (ec2, azure, vmware)
-instance_loc: ec2
-name_prefix: "skylight"
+instance_loc: azure
+name_prefix: "lights"
 
 # Needed for AD and windows client provision
-dns_domain_name: "ansibleworkshop.com"
-dns_domain_name_short: "ansibleworkshop"
-ldap_basedn: "DC=ansibleworkshop,DC=com"
+dns_domain_name: "snx.local"
+dns_domain_name_short: "snx"
+ldap_basedn: "DC=snx,DC=local"
 domain_admin_password: "MyP@ssw0rd21"
 
 # Number of users and prefix for user name
-user_count: 1
+user_count: 2
 user_prefix: student
 users_password: "Ans1bl3--"
 
@@ -48,7 +48,7 @@ advanced_lab: false
 ###################### GITLAB INFO #######################
 ##########################################################
 
-# Gitlab variables
+# Gitlab var2ables
 gitlab_external_url: "https://gitlab.{{ dns_domain_name }}/"
 gitlab_git_data_dir: "/var/opt/gitlab/git-data"
 gitlab_backup_path: "/var/opt/gitlab/backups"
@@ -142,23 +142,23 @@ vmware_windows_template: "{{ vCenterCloneSourceWindows }}"
 ####################### AZURE INFO #######################
 ##########################################################
 
-azure_admin_user: "skylight"
-azure_admin_pass: "MyS3cr3tP@ssw0rd"
+azure_admin_user: "RedHatAdmin"
+azure_admin_pass: "REDHATadmin@75"
 
-azure_client_id: ''
-azure_secret: ''
-azure_subscription_id: ''
-azure_tenant: ''
-azure_location: ''
+azure_client_id: '1c57ab37-14e2-4b99-9005-697ddb144294'
+azure_secret: '38a3a9a2-ccbd-471b-9fb2-87a6f92eef28'
+azure_subscription_id: '171cb7cb-0b56-4861-b7a7-d7cfad50be90'
+azure_tenant: 'e09fe7ba-2840-4126-b83e-6f8622172287'
+azure_location: 'East US'
 
 azure_storage_account_type: Standard_LRS
 
 # Instance Sizes
-azure_tower_instance_type: "Standard_A2_v2"    # Medium = 2 vCPU / 4GB
-azure_gitlab_instance_type: "Standard_A2_v2"   # Might be able to use small...
-azure_windc_instance_type: "Standard_A2_v2"
-azure_windows_workstation_instance_type: "Standard_A2_v2"
-azure_windows_instance_type: "Standard_A2_v2"   # Medium = 2 vCPU / 4GB
+azure_tower_instance_type: "Standard_D2_v3"    # Medium = 2 vCPU / 4GB
+azure_gitlab_instance_type: "Standard_D2_v3"   # Might be able to use small...
+azure_windc_instance_type: "Standard_D2_v3"
+azure_windows_workstation_instance_type: "Standard_D2_v3"
+azure_windows_instance_type: "Standard_D2_v3"   # Medium = 2 vCPU / 4GB
 
 azure_rhel_publisher: "OpenLogic"
 azure_rhel_offer: "CentOS"

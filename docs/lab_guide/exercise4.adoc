@@ -146,7 +146,7 @@ Once your job is successful, navigate to your new website (replace # with your s
 
 [source,bash]
 ----
-http://s#-win1.ansibleworkshop.com
+http://s#-win1.snx.local
 ----
 
 

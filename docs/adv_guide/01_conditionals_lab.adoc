@@ -126,7 +126,7 @@ ok: [node-1]
 
 TASK [debug] *******************************************************************
 ok: [node-1] => {
-    "msg": "my hostname is s1-win1.ansibleworkshop.com"
+    "msg": "my hostname is s1-win1"
 }
 
 PLAY RECAP *********************************************************************
